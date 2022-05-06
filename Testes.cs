@@ -11,8 +11,6 @@ namespace TestesUnitarios
         {
             var feriadoFixo = FeriadosFixo.ConsultarFeriadoFixo(25, 12);
             Assert.True(feriadoFixo.Feriado == true);
-            Assert.NotNull(feriadoFixo.Feriado);
-            Assert.NotEmpty(feriadoFixo.NomeFeriado);
         }
 
         [Fact]
@@ -20,7 +18,6 @@ namespace TestesUnitarios
         {
             var feriadoMovel = FeriadoMovel.ConsultarFeriadoMovel(17, 04, 2022);
             Assert.True(feriadoMovel.Feriado == true);
-            Assert.NotNull(feriadoMovel.Feriado);
             Assert.NotEmpty(feriadoMovel.NomeFeriado);
         }
 
